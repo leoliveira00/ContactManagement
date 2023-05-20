@@ -2,10 +2,18 @@
   "name": "contactmanagement",
   "version": "1.0.0",
   "description": "Contact Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoliveira00/ContactManagement.git"
+  },
   "author": "Leonardo Oliveira",
-  "homepage": "https://github.com/leoliveira00/ContactManagement#readme",
-  "dependencies": {
-    "Microsoft.EntityFrameworkCore.Design": "versao7.0.5",
-    "MySql.EntityFrameworkCore": "versao7.0.2"
-  }
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoliveira00/ContactManagement/issues"
+  },
+  "homepage": "https://github.com/leoliveira00/ContactManagement#readme"
 }
