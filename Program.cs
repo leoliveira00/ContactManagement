@@ -5,7 +5,7 @@ using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var configuration = builder.Configuration.GetConnectionString("MariaDB");
+var configuration = builder.Configuration.GetConnectionString("MariaDB") ?? throw new InvalidOperationException("Connection string 'MariaDB' not found.");
 
 // Add services to the container.
 builder.Services.AddRazorPages();

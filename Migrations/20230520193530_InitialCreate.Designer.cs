@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ContactManagement.Migrations
 {
     [DbContext(typeof(ContactManagementContext))]
-    [Migration("20230520192130_InitialCreate")]
+    [Migration("20230520193530_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
