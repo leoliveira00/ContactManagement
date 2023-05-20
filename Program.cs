@@ -1,12 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using ContactManagement.Data;
+using System.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var configuration = builder.Configuration.GetConnectionString("MariaDB");
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<ContactManagementContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ContactManagementContext") ?? throw new InvalidOperationException("Connection string 'ContactManagementContext' not found.")));
+builder.Services.AddDbContext<ContactManagementContext>(options => options.UseMySQL(configuration));
 
 var app = builder.Build();
 
