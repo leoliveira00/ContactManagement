@@ -1,0 +1,11 @@
+{
+  "name": "contactmanagement",
+  "version": "1.0.0",
+  "description": "Contact Management",
+  "author": "Leonardo Oliveira",
+  "homepage": "https://github.com/leoliveira00/ContactManagement#readme",
+  "dependencies": {
+    "Microsoft.EntityFrameworkCore.Design": "versao7.0.5",
+    "MySql.EntityFrameworkCore": "versao7.0.2"
+  }
+}
