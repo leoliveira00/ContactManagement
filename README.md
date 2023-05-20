@@ -1,5 +1,5 @@
 # ContactManagement
 
 Dependêcias:
-Microsoft.EntityFrameworkCore.Design
-MySql.EntityFrameworkCore
+* Microsoft.EntityFrameworkCore.Design
+* MySql.EntityFrameworkCore
